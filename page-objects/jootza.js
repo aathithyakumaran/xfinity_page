@@ -4,7 +4,7 @@ const helpers = require("../runtime/helpers");
 /* eslint-disable no-undef */
 module.exports = {
 
-    url: 'http://www.jootza.com/login',
+    url: 'http://www.jootza.com',
 
     elements: {
         Login: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[2]/a',
@@ -15,11 +15,23 @@ module.exports = {
         errorMessage: '//*[@id="toast-container"]/mdb-toast-component/div',
         PasswordVal: 'demo1234',
         submitBtn: '',
-        approverName : '//*[@id="info"]/div[1]/div[3]/div/input'
+        approverName : '//*[@id="info"]/div[1]/div[3]/div/input',
+        Register: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[3]/a',
+        message24By7:'//*[@id="main"]/div[4]/div[1]/div/h2',
+        createAccountButton:'//*[@id="open-account-btn"]',
+        invalidEmailMessage:'//*[@id="main"]/div[7]/div/div/form/div[2]',
+        Subscribe:'//*[@id="main"]/div[7]/div/div/form/div[1]/input[2]',
+        registerHeader:'/html/body/mdb-root/main/div/app-customer-signup/header/section/div/div/div/div/div/div/div/div/div',
+
     },
     content : {
         'Adams, Jimmy': 'Adams, Jimmy',
         'ADMIN, CLT' : 'ADMIN, CLT'
+    },
+    scrollToElement: async function(objectKey) {
+        var selector = page.jootza.elements[objectKey];
+        await driver.sleep(2000);
+        return helpers.scrollToElement(driver.findElement(By.xpath(selector)));
     },
     clickElement: async function(objectKey) {
         // eslint-disable-next-line no-console

@@ -1,10 +1,50 @@
 Feature: As a jootza customer, I want to be able to navigate to landing poage so that I can view product information
 
-  @jootza @jootzaLanding
+
+# Click to Open Account - CUSTOMER REGISTRATION
+
+  @jootza @jootzaLogin
   Scenario: Customer is displayed with jootza.com landing page
     Given I am on the Jootza portal
-    When I click on "Login"
-    Then I should see "LoginHeader"
+    When I click on "loginButton" Button
+    Then I should see "loginHeader" Header
+
+  @jootza @jootzaRegister
+  Scenario: Customer is displayed with jootza.com landing page
+    Given I am on the Jootza portal
+   
+    When I click on "registerButton" Button
+    Then I should see "registerHeader" Header
+
+  @jootza @jootzaCreateAccount
+  Scenario: Customer is displayed with jootza.com landing page
+    Given I am on the Jootza portal
+    When I scroll to "message24By7"
+    When I click on "createAccountButton"
+    Then I should see "registerHeader" 
+
+@jootza @jootzaSubscribe
+  Scenario: Customer is displayed with jootza.com landing page
+    Given I am on the Jootza portal
+    When I scroll to "Subscribe"
+    When I click on "Subscribe"
+    Then I should see "invalidEmailMessage"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @jootza @jootzaLogin
   Scenario: Customer is displayed with jootza.com landing page and tries to login into the portal

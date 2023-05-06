@@ -7,6 +7,9 @@ module.exports = function () {
     this.When(/^I click on "([^"]*)"$/, function (objectKey) {
         return page.jootza.clickElement(objectKey);
     });
+    this.When(/^I scroll to "([^"]*)"$/, function (objectKey) {
+        return page.jootza.scrollToElement(objectKey);
+    });
 
     this.When(/^I enter username "([^"]*)"$/ , function(objKey1) {
         return page.jootza.inputUserName(objKey1);
