@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page" tests="5" failures="1" skipped="2">
+        <properties>
+            <property name="@xfinitywifipass" value="true">
+            </property>
+            <property name="URI" value="C:/Users/ADHITHYA/Workspace/bootcamp_homework/bdd-automation-9/features/xfinity-home.feature">
+            </property>
+        </properties>
+        <testcase name="Given I am on the xfinity page" classname="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page" time="7.5148047">
+        </testcase>
+        <testcase name="When I click on &quot;loginButton&quot;" classname="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page" time="8.512032">
+        </testcase>
+        <testcase name="When I enter username &quot;username&quot;" classname="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page" time="2.0059497">
+            <failure message="TypeError: Invalid locator">TypeError: Invalid locator
+    at Object.check [as checkedLocator] (C:\Users\ADHITHYA\Workspace\bootcamp_homework\bdd-automation-9\node_modules\selenium-webdriver\lib\by.js:417:9)
+    at thenableWebDriverProxy.findElement (C:\Users\ADHITHYA\Workspace\bootcamp_homework\bdd-automation-9\node_modules\selenium-webdriver\lib\webdriver.js:987:20)
+    at Object.inputUserName (C:\Users\ADHITHYA\Workspace\bootcamp_homework\bdd-automation-9\page-objects\xfinity.js:48:23)</failure>
+        </testcase>
+        <testcase name="And I click on &quot;letsgo&quot;" classname="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should see &quot;passwordheader&quot;" classname="as-a-xfinity-customer,-i-want-to-be-able-to-navigate-to-landing-poage-so-that-i-can-view-product-information;customer-is-displayed-with-xfinity-page">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>
